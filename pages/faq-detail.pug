@@ -1,0 +1,37 @@
+extends ../main-layout
+
+block headAppendTitle
+    title TJ Tech - FAQ Detail
+block scriptFootAppend
+    script(src='assets/scripts/faq-detail.js' defer='')
+
+block content
+    .container.mt-5.pt-5.faq-root
+        .row
+            .col-12.col-md-6
+                .text-intro.w-95
+                    | The Future
+                    br
+                    |  Of Digital Mastery
+                button.btn-base.learn-btn Learn More
+            .col-12.col-md-6
+                img(style='width: 100%;' src='assets/images/t_community.svg' alt='')
+        #faq-header.g-header.text-center.ecosys-leading(style='margin-top: 102px; margin-bottom: 76px;') FAQ
+        #collapse-root
+            .faq-panel
+                .faq-panel-header
+                    | Who are we and what type of products/services do we offer?
+                    button.fqa-button
+                        svg
+                            use(href='#cross')
+                .faq-panel-body
+                    .x-collapse
+                        .content
+                            | TJ Tech Group with its fully flexible high-end disruptive business model, is a Singaporean established and trusted Forex CRM provider, located at Capital Place in the heart of Hanoi&rsquo;s financial quarter.
+                            br
+                            br
+                            |               The team consists of 60 professionals that provide premium support to help our domestic and international clients maximise profit through Quality Cost Delivery techniques; they also act as a bridge for knowledge transfer.
+                            br
+                            br
+                            |               We offer a professional gateway to financial markets, custom software development, cutting-edge products, multiple platforms, liquidity aggregation, and more.
+

@@ -1,0 +1,179 @@
+extends main-layout
+block headAppend
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css')
+block scriptHeadAppend
+    script(src='assets/scripts/swiper.config.js' defer='')
+    script(src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js')
+
+block content
+    .container
+        .row
+            .col-12.col-md-6
+                .text-intro.w-95 Give People Freedom
+                .text-intro-explain.text-mt.w-95 Help businesses optimize their delivery cycle and faster software releases
+                button.btn-base.learn-btn Learn More
+            .col-12.col-md-6
+                img(style='width: 100%;' src='assets/images/p_home.svg' alt='')
+        .slideshow
+            .swiper
+                // Additional required wrapper
+                .swiper-wrapper
+                    // Slides
+                    .swiper-slide
+                        .hl-item
+                            img(src='assets/images/hl_tech_software.svg' alt='')
+                            .slide-title CRM Software
+                    .swiper-slide
+                        .hl-item
+                            img(src='assets/images/hl_sys_develop.svg' alt='')
+                            .slide-title System Development
+                    .swiper-slide
+                        .hl-item
+                            img(src='assets/images/hl_server_maintain.svg' alt='')
+                            .slide-title Server Maintenance
+                    .swiper-slide
+                        .hl-item
+                            img(src='assets/images/hl_customer_support.svg' alt='')
+                            .slide-title Customer Support
+                    .swiper-slide
+                        .hl-item
+                            img(src='assets/images/hl_Consultation_Service.svg' alt='')
+                            .slide-title Consultation Service
+                // If we need pagination
+                // <div class="swiper-pagination"></div>
+            #swiper-next.swiper-controls-btn
+                svg(width='12' height='26' viewbox='0 0 12 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M1 24.962L9.71877 15.1873C10.7337 14.0494 10.7337 12.3312 9.71877 11.1934L1 1.4187' stroke='#93979B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+            #swiper-prev.swiper-controls-btn
+                svg(width='13' height='26' viewbox='0 0 13 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M11.5 24.9931L1 13.2215L11.5 1.44983' stroke='#93979B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+        .d-flex.justify-content-center
+            .tjex-ecosystem
+                .tjex-description
+                    .header.g-header.text-center TJex Ecosystem
+                    .detail.g-detail.text-center
+                        | We offer a professional gateway to financial markets, custom software development, cutting-edge products, multiple platforms, liquidity aggregation and more
+                .circle.between
+                    #rounded-container
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-right TJex.org
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-left TJex.trade
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-left TJex.help
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-left TJex.estate
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-left TJex.cloud
+                                img(src='assets/images/ic_rounded_ticked.svg' alt='')
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-right TJex.fund
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-right TJex.digital
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                            .iw
+                                span.rounded-content.rounded-content-right TJex.ai
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+    .wcu
+        img.deep-bg(src='assets/images/t_why_choose_us.svg')
+        .container
+            .row
+                .col-12.col-xl-6
+                    img(src='assets/images/computer.svg' alt='')
+                .col-12.col-xl-6
+                    .g-header Why Choose Us
+                    .g-detail
+                        | To achieve our goals, we have developed a set of core competencies that set us apart in the highly competitive CRM industry:
+                    .desc-list
+                        .item.g-detail.fw-500
+                            | Innovative: Provide the latest IT products and continuously advance our technology to keep ahead of competitors
+                        .item.g-detail.fw-500 Digital: Enable clients to work on a complete and trusted digital platform
+                        .item.g-detail.fw-500
+                            | User-friendly and simple: Create comprehensive products available for all kinds of users
+                        .item.g-detail.fw-500
+                            | Fast and Robust: Deliver products at a fast pace and under strict quality management frameworks
+                        .item.g-detail.fw-500
+                            | Standardisable and Customizable: Exceed sophisticated requirements from clients. Customise the system to fit client&rsquo;s financial positions and capabilities
+                        .item.g-detail.fw-500
+                            | Customer centric: Build up products for customers and attentively listen to customers&apos; feedback.
+                        .item.g-detail.fw-500
+                            | Sustainable: Pursue a long-term vision for future development and a focus on sustainability
+                    button.btn-base.contact-us-btn Contact Us
+    .container
+        .d-flex.justify-content-center
+            .wwa
+                .g-header.text-center Who We Are
+                .g-detail.text-center
+                    | The team consists of knowledgeable expert who are able to provide premium support to help our domestic and international clients maximise profit through Quality Cost Delivery techniques; they also act as a bridge for knowledge transfer.
+        .wwa-list.d-flex
+            .wwa-item
+                .d-flex.align-items-center
+                    img(src='assets/images/wwa_innovation.svg' alt='')
+                    .header Innovation
+                .detail Continuously adjust to satisfy customers
+            .wwa-item
+                .d-flex.align-items-center
+                    img(src='assets/images/wwa_innovation.svg' alt='')
+                    .header Commitment
+                .detail Vow to deliver the best products in the range
+            .wwa-item
+                .d-flex.align-items-center
+                    img(src='assets/images/wwa_innovation.svg' alt='')
+                    .header Respect
+                .detail Look up to customers the way they deserve
+    .personnel-box
+        .container
+            .row
+                .col-12.col-xl-6
+                    .g-header.text-center
+                        | Voice of
+                        br
+                        |  Our Customers
+                    .g-detail.fst-italic
+                        | &ldquo;Low-hanging fruit are we in agreeance, we need to leverage our synergies. Put it on the parking lot drive awarenss to increase engagement but shelfware, yet if you could do that, that would br great get all your ducks in a row.&rdquo;
+                    .personnel-name Alexis Conely
+                    .personnel-position Project Manager
+                    .actions.d-flex
+                        button.personnel-btn.invalid-action
+                            svg.ic-btn
+                                use(href='#btn-vector')
+                        button.personnel-btn.available-action.flip-horizontal
+                            svg.ic-btn
+                                use(href='#btn-vector')
+                .col-12.col-xl-6
+                    .avatar-description
+                        img.decorator-1(src='assets/images//av_complex_box.svg')
+                        img.decorator-2(src='assets/images//av_ball.svg')
+                        img#personalsrc(src='assets/images/personnel.jpg' alt='')
+    .container(style='padding-top: 160px')
+        .row
+            .col-12.col-xl-6
+                img.building(src='assets/images/building.svg' alt='')
+            .col-12.col-xl-6
+                .ctu-detail.pl-5
+                    .g-header.mb-40 Contact Us
+                    .g-detail
+                        | TJ Tech Group with its fully flexible high-end disruptive business model, is a Singaporean established and trusted CRM provider, located at Capital Place Building in the heart of Hanoi&rsquo;s financial quarter
+                    button.btn-base.contact-us-btn Contact Us
+
+        .leave-info.d-flex.align-content-center.justify-content-between
+            .info
+                .g-header Follow Us
+                .g-detail Never want to miss any new opportunity
+            input#leave-mail(type='text' name='' placeholder='Enter Your Email')
+            button.btn-base.subs-btn Subscribe
+
+
