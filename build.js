@@ -3,7 +3,7 @@
 const { exec } = require('child_process');
 const fs = require('fs');
 const buildFolder = './pages';
-const command = (filesDir) => (`npx pug index.pug ${filesDir} --out ./`);
+exec(`npx pug index.pug --out ./`);
 fs.readdir(buildFolder, (err, files) => {
   if(files && files.length) {
     files.forEach(file => {
