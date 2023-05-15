@@ -1,5 +1,11 @@
+-  const local = '';
+-  const remote = '/tjt_ws';
+
+-  const environment = remote;
+
+
 doctype
-html(lang="end")
+html(lang="en")
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -55,7 +61,7 @@ html(lang="end")
             .nav-foot
                 .container
                     .d-flex.justify-content-between
-                        a.logo(href='/')
+                        a.logo(href=environment)
                             img(src='assets/images/main_logo.png' alt='logo' title='Home')
                         #nav-controls.nav-controls
                             .nav-control.ts-nm(onclick='')
@@ -122,7 +128,7 @@ html(lang="end")
             .container
                 .row.footer-info
                     .col-12.col-xl-6
-                        a(href='/')
+                        a(href=environment)
                             img(src='assets/images/main_logo.svg' alt='')
                         br
                         .g-detail.description.pe-4
