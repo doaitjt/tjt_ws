@@ -2,6 +2,17 @@ $remote: '/tjt_ws';
 $local: '';
 $current: $remote;
 
+/** override bs config */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1216px !important;
+  }
+}
+.row {
+  --bs-gutter-x: 2rem !important;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -308,7 +319,8 @@ button {
 }
 
 .text-mt {
-  margin-top: 61px;
+  margin-top: 41px;
+  line-height: 36px;
 }
 
 .w-95 {
@@ -367,6 +379,7 @@ button {
   }
   .hl-item {
     width: 208px;
+    height: 177px;
     padding: 36px 0 21px 0;
     background: #ffffff;
     border-radius: 3px;
@@ -374,6 +387,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     .slide-title {
       padding-top: 12px;
       font-style: normal;
@@ -452,18 +466,19 @@ button {
   width: 100%; /* Adjust the width and height as per your requirements */
   height: 100%;
   margin: 0 auto; /* Center the container horizontally */
-  transform: rotate(68deg);
+  transform: rotate(54deg); 
 }
 
 .around-item {
   position: absolute;
-  transform: rotate(-68deg);
+  transform: rotate(-54deg);
   width: 56px; /* Adjust the width and height of the squares as per your requirements */
   height: 56px;
   border-radius: 50%; /* Optional: Add border radius for rounded corners */
   .iw {
     position: relative;
     .rounded-content {
+      cursor: pointer;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -657,7 +672,7 @@ button {
     width: 404px;
   }
   .g-detail {
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .subs-btn {
     width: 176px;
@@ -739,18 +754,16 @@ button {
   .s-leading {
     .figure {
       margin-right: 0;
-      margin-left: 32px;
       .image-shadow {
         right: 0;
         height: 401px;
       }
       .main-image {
-        left: 0;
+        left: 37px !important;
       }
     }
   }
   .figure {
-    width: 40%;
     position: relative;
     margin-right: 32px;
     .image-shadow {
@@ -769,7 +782,6 @@ button {
     }
   }
   .descriptor {
-    width: 60%;
   }
   .descriptor-item {
     padding: 42px 32px;
@@ -808,7 +820,6 @@ button {
     left: unset;
   }
   .main-image {
-    width: 368px;
   }
 }
 .ecs-title {
@@ -1057,10 +1068,8 @@ button {
 }
 .about-head {
   .a-content {
-    width: 45%;
   }
   .a-figure {
-    flex: 1;
   }
 }
 
@@ -1083,7 +1092,7 @@ button {
   }
 }
 .head-figure {
-  width: 48%;
+  width: 50%;
   img {
     width: 100%;
   }

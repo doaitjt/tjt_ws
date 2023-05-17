@@ -5,6 +5,19 @@ const $$ = document.querySelectorAll.bind(document);
 
 $('.g-normal.text-center.copy-right').innerText = `All rights reserved by TJTech. Copyright © ${new Date().getFullYear()}`;
 
+$$('.rounded-content').forEach((ele) => {
+  const parent = ele.parentElement;
+  const imgElement = parent.children[1]; 
+  ele.addEventListener('mouseenter', () => {
+    imgElement.src = 'assets/images/ic_rounded_ticked.svg';
+    console.log(imgElement);
+  });
+  ele.addEventListener('mouseleave', () => {
+    imgElement.src = 'assets/images/ic_rounded_tick.svg';
+    console.log(imgElement);
+  })
+})
+
 /** func */
 
 // for nav

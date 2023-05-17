@@ -7,10 +7,13 @@ block scriptHeadAppend
 
 block content
     .container
-        .row
+        .row.mt-5
             .col-12.col-md-6
-                .text-intro.w-95 Give People Freedom
-                .text-intro-explain.text-mt.w-95 Help businesses optimize their delivery cycle and faster software releases
+                .text-intro.w-95
+                    | Give People
+                    br
+                    | Freedom
+                .text-intro-explain.text-mt Help businesses optimize their delivery cycle and faster software releases
                 button.btn-base.learn-btn Learn More
             .col-12.col-md-6
                 img(style='width: 100%;' src='assets/images/p_home.svg' alt='')
@@ -50,52 +53,54 @@ block content
         .d-flex.justify-content-center
             .tjex-ecosystem
                 .tjex-description
-                    .header.g-header.text-center TJex Ecosystem
-                    .detail.g-detail.text-center
+                    .header.g-header.text-center Future Development
+                    .detail.g-detail.text-center.fw-500
                         | We offer a professional gateway to financial markets, custom software development, cutting-edge products, multiple platforms, liquidity aggregation and more
                 .circle.between
                     #rounded-container
                         .around-item
                             .iw
-                                span.rounded-content.rounded-content-right TJex.org
+                                a.rounded-content.rounded-content-right(href='tjex-app.html') TJex.app
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                        .around-item
+                            .iw
+                                a.rounded-content.rounded-content-left(href='tjex-trade.html') TJex.trade
                                 img(src='assets/images/ic_rounded_tick.svg' alt='')
                         .around-item
                             .iw
-                                span.rounded-content.rounded-content-left TJex.trade
+                                a.rounded-content.rounded-content-left(href='tjex-insure.html') TJex.insure
                                 img(src='assets/images/ic_rounded_tick.svg' alt='')
                         .around-item
                             .iw
-                                span.rounded-content.rounded-content-left TJex.help
+                                a.rounded-content.rounded-content-left(href='tjex-estate.html') TJex.estate
                                 img(src='assets/images/ic_rounded_tick.svg' alt='')
                         .around-item
                             .iw
-                                span.rounded-content.rounded-content-left TJex.estate
+                                a.rounded-content.rounded-content-left(href='tjex-finance.html') TJex.finance
+                                img(src='assets/images/ic_rounded_tick.svg' alt='')
+                        .around-item
+                        .around-item
+                            .iw
+                                a.rounded-content.rounded-content-right(href='tjex-fund.html') TJex.fund
                                 img(src='assets/images/ic_rounded_tick.svg' alt='')
                         .around-item
                             .iw
-                                span.rounded-content.rounded-content-left TJex.cloud
-                                img(src='assets/images/ic_rounded_ticked.svg' alt='')
-                        .around-item
-                            .iw
-                                span.rounded-content.rounded-content-right TJex.fund
+                                a.rounded-content.rounded-content-right(href='tjex-digital.html') TJex.digital
                                 img(src='assets/images/ic_rounded_tick.svg' alt='')
                         .around-item
                             .iw
-                                span.rounded-content.rounded-content-right TJex.digital
-                                img(src='assets/images/ic_rounded_tick.svg' alt='')
-                        .around-item
-                            .iw
-                                span.rounded-content.rounded-content-right TJex.ai
+                                a.rounded-content.rounded-content-right(href='tjex-ai.html') TJex.ai
                                 img(src='assets/images/ic_rounded_tick.svg' alt='')
     .wcu
         img.deep-bg(src='assets/images/t_why_choose_us.svg')
         .container
             .row
-                .col-12.col-xl-6
-                    img(src='assets/images/computer.svg' alt='')
-                .col-12.col-xl-6
+                .col-12.col-xl-5
+                    img(src='assets/images/computer.svg' alt='' style='width: 100%')
+                .col-12.col-xl-7
                     .g-header Why Choose Us
-                    .g-detail
+                    .g-detail.fw-500
                         | To achieve our goals, we have developed a set of core competencies that set us apart in the highly competitive CRM industry:
                     .desc-list
                         .item.g-detail.fw-500
@@ -111,12 +116,12 @@ block content
                             | Customer centric: Build up products for customers and attentively listen to customers&apos; feedback.
                         .item.g-detail.fw-500
                             | Sustainable: Pursue a long-term vision for future development and a focus on sustainability
-                    button.btn-base.contact-us-btn Contact Us
+                    button.btn-base.contact-us-btn Enquire Now
     .container
         .d-flex.justify-content-center
             .wwa
                 .g-header.text-center Who We Are
-                .g-detail.text-center
+                .g-detail.text-center.fw-500
                     | The team consists of knowledgeable expert who are able to provide premium support to help our domestic and international clients maximise profit through Quality Cost Delivery techniques; they also act as a bridge for knowledge transfer.
         .wwa-list.d-flex
             .wwa-item
@@ -126,12 +131,12 @@ block content
                 .detail Continuously adjust to satisfy customers
             .wwa-item
                 .d-flex.align-items-center
-                    img(src='assets/images/wwa_innovation.svg' alt='')
+                    img(src='assets/images/wwa_commitment.svg' alt='')
                     .header Commitment
                 .detail Vow to deliver the best products in the range
             .wwa-item
                 .d-flex.align-items-center
-                    img(src='assets/images/wwa_innovation.svg' alt='')
+                    img(src='assets/images/wwa_respect.svg' alt='')
                     .header Respect
                 .detail Look up to customers the way they deserve
     .personnel-box
@@ -142,7 +147,7 @@ block content
                         | Voice of
                         br
                         |  Our Customers
-                    .g-detail.fst-italic
+                    .g-detail.fst-italic.fw-500
                         | &ldquo;Low-hanging fruit are we in agreeance, we need to leverage our synergies. Put it on the parking lot drive awarenss to increase engagement but shelfware, yet if you could do that, that would br great get all your ducks in a row.&rdquo;
                     .personnel-name Alexis Conely
                     .personnel-position Project Manager
@@ -164,15 +169,15 @@ block content
                 img.building(src='assets/images/building.svg' alt='')
             .col-12.col-xl-6
                 .ctu-detail.pl-5
-                    .g-header.mb-40 Contact Us
-                    .g-detail
+                    .g-header.mb-40 Office Location
+                    .g-detail.fw-500
                         | TJ Tech Group with its fully flexible high-end disruptive business model, is a Singaporean established and trusted CRM provider, located at Capital Place Building in the heart of Hanoi&rsquo;s financial quarter
                     button.btn-base.contact-us-btn Contact Us
 
-        .leave-info.d-flex.align-content-center.justify-content-between
+        .leave-info.d-flex.align-items-center.justify-content-between
             .info
-                .g-header Follow Us
-                .g-detail Never want to miss any new opportunity
+                .g-header(style='line-height: 35px') Follow Us
+                .g-detail.fw-500 Never want to miss any new opportunity
             input#leave-mail(type='text' name='' placeholder='Enter Your Email')
             button.btn-base.subs-btn Subscribe
 

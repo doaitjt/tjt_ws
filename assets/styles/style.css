@@ -1,3 +1,13 @@
+/** override bs config */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1216px !important;
+  }
+}
+.row {
+  --bs-gutter-x: 2rem !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -299,7 +309,8 @@ button {
 }
 
 .text-mt {
-  margin-top: 61px;
+  margin-top: 41px;
+  line-height: 36px;
 }
 
 .w-95 {
@@ -358,6 +369,7 @@ button {
 }
 .swiper .hl-item {
   width: 208px;
+  height: 177px;
   padding: 36px 0 21px 0;
   background: #ffffff;
   border-radius: 3px;
@@ -365,6 +377,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 .swiper .hl-item .slide-title {
   padding-top: 12px;
@@ -440,12 +453,12 @@ button {
   width: 100%; /* Adjust the width and height as per your requirements */
   height: 100%;
   margin: 0 auto; /* Center the container horizontally */
-  transform: rotate(68deg);
+  transform: rotate(54deg);
 }
 
 .around-item {
   position: absolute;
-  transform: rotate(-68deg);
+  transform: rotate(-54deg);
   width: 56px; /* Adjust the width and height of the squares as per your requirements */
   height: 56px;
   border-radius: 50%; /* Optional: Add border radius for rounded corners */
@@ -454,6 +467,7 @@ button {
   position: relative;
 }
 .around-item .iw .rounded-content {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -642,7 +656,7 @@ button {
   width: 404px;
 }
 .leave-info .g-detail {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .leave-info .subs-btn {
   width: 176px;
@@ -725,17 +739,15 @@ button {
 }
 .crm-service .s-leading .figure {
   margin-right: 0;
-  margin-left: 32px;
 }
 .crm-service .s-leading .figure .image-shadow {
   right: 0;
   height: 401px;
 }
 .crm-service .s-leading .figure .main-image {
-  left: 0;
+  left: 37px !important;
 }
 .crm-service .figure {
-  width: 40%;
   position: relative;
   margin-right: 32px;
 }
@@ -752,9 +764,6 @@ button {
   position: absolute;
   right: 0;
   bottom: 0;
-}
-.crm-service .descriptor {
-  width: 60%;
 }
 .crm-service .descriptor-item {
   padding: 42px 32px;
@@ -786,10 +795,6 @@ button {
   width: 70%;
   left: unset;
 }
-.consultation-service .figure .main-image {
-  width: 368px;
-}
-
 .ecs-title {
   color: #0080e9;
   font-weight: 700;
@@ -1037,13 +1042,6 @@ button {
   padding-right: 32px;
 }
 
-.about-head .a-content {
-  width: 45%;
-}
-.about-head .a-figure {
-  flex: 1;
-}
-
 .reports {
   margin: 104px 0;
 }
@@ -1064,7 +1062,7 @@ button {
 }
 
 .head-figure {
-  width: 48%;
+  width: 50%;
 }
 .head-figure img {
   width: 100%;
