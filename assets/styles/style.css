@@ -544,15 +544,11 @@ input:focus-visible {
 .wcu .g-header {
   margin-bottom: 40px;
 }
-.wcu .g-detail {
-  width: 492px;
-}
 .wcu .desc-list {
   margin-top: 33px;
 }
 .wcu .desc-list .item {
   padding: 13px 0 13px 48px;
-  width: 590px;
   position: relative;
 }
 .wcu .desc-list .item:before {

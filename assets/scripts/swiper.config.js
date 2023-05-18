@@ -4,10 +4,9 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 'auto',
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
+  observer: true,
+  observeParents: true,
+  parallax:true,
   // Navigation arrows
   navigation: {
     nextEl: '#swiper-next',
