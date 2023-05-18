@@ -12,34 +12,13 @@ $$('.rounded-content').forEach((ele) => {
 	const imgElement = parent.children[1];
 	ele.addEventListener('mouseenter', () => {
 		imgElement.src = 'assets/images/ic_rounded_ticked.svg';
-		console.log(imgElement);
 	});
 	ele.addEventListener('mouseleave', () => {
 		imgElement.src = 'assets/images/ic_rounded_tick.svg';
-		console.log(imgElement);
 	});
 });
 
 /** func */
-
-// for nav
-/* const menu = navActions.map((e, i) => `
-  <div class="nav-control ts-nm" onclick="openSubMenu(${i})">
-    ${e}
-    <svg class="nav-more-ic"><use href="#triangle-more"/></svg>
-  </div>
-`).join('');
-$('#nav-controls').innerHTML = menu;
-function openSubMenu(index) {
-  console.log(index);
-}
-$$('.nav-control').forEach(element => {
-  element.addEventListener('click', e => {
-    const rect = element.getBoundingClientRect();
-    console.log(rect);
-    // const 
-  })
-}); */
 
 function setSubmenuPosition() {
 	const navControls = $('#nav-controls').getBoundingClientRect();
@@ -56,9 +35,8 @@ window.onresize = () => {
 	setSubmenuPosition();
 };
 
-//
 
-var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+const keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
 
 function preventDefault(e) {
 	e.preventDefault();
@@ -173,7 +151,6 @@ $$('button').forEach((el) => {
 });
 
 window.onscroll = (e) => {
-	console.log(window.scrollY);
 	if (window.scrollY > 68) {
 		$('.nav-foot').classList.add('filter-drop');
 	} else {
