@@ -197,8 +197,10 @@ input:focus-visible {
   position: sticky;
   top: 0;
   z-index: 4;
-  -webkit-backdrop-filter: blur(40px) saturate(4.5);
-          backdrop-filter: blur(40px) saturate(4.5);
+}
+.nav-foot.filter-drop {
+  background-color: #fff;
+  box-shadow: 0 1px 29px -24px grey;
 }
 .nav-foot .logo {
   margin: 15px 0;
@@ -375,7 +377,6 @@ input:focus-visible {
 
 .slideshow {
   position: relative;
-  margin-top: 43px;
 }
 .slideshow #swiper-prev {
   left: 0;
@@ -385,7 +386,7 @@ input:focus-visible {
 }
 .slideshow .swiper-controls-btn {
   position: absolute;
-  top: 91px;
+  top: 130px;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
@@ -401,8 +402,8 @@ input:focus-visible {
 }
 
 .swiper {
-  width: calc(100% - 190px);
   height: 300px;
+  padding: 45px 10px 0 10px;
 }
 .swiper .swiper-wrapper {
   padding: 0 12px;
@@ -416,7 +417,7 @@ input:focus-visible {
   padding: 36px 0 21px 0;
   background: #ffffff;
   border-radius: 3px;
-  filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.1));
   display: flex;
   flex-direction: column;
   align-items: center;

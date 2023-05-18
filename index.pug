@@ -17,8 +17,8 @@ block content
                 button.btn-base.learn-btn Learn More
             .col-12.col-md-6
                 img(style='width: 100%;' src='assets/images/p_home.svg' alt='')
-        .slideshow
-            .swiper
+        .slideshow.row
+            .swiper.col-10(style='padding-top: 45px')
                 // Additional required wrapper
                 .swiper-wrapper
                     // Slides
@@ -42,6 +42,10 @@ block content
                         .hl-item
                             img(src='assets/images/hl_Consultation_Service.svg' alt='')
                             .slide-title Consultation Service
+                    .swiper-slide
+                        .hl-item
+                            img(src='assets/images/hl_supportive_feature.svg' alt='')
+                            .slide-title Supportive Features
                 // If we need pagination
                 // <div class="swiper-pagination"></div>
             #swiper-next.swiper-controls-btn
