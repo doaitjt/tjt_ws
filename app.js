@@ -152,3 +152,19 @@ for (let i = 0; i < squares.length; i++) {
   square.style.left = `${x + 270}px`; // Adjust the horizontal center position as per the container width
   square.style.top = `${y + 270}px`; // Adjust the vertical center position as per the container height
 }
+
+$$('button').forEach(el => {
+  Ribble.attachEvent(el, {
+    // duration in milliseconds
+    duration: 400,
+    // z-index
+    zIndex: "9999",
+    // background color
+    bgColor: "#fff",
+    // max opacity level
+    maxOpacity: "0.4",
+    // easing function
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)"
+
+  })
+})

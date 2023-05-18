@@ -45,7 +45,18 @@ a {
 
 button {
   border: none;
-  background-color: transparent;
+  transition: 0.25s;
+}
+button:active {
+  box-shadow: 0 0 14px -3px #d9d9d9;
+}
+
+input {
+  transition: 0.1s;
+}
+input:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 3px 1px var(--nav-color);
 }
 
 .ts-nm {
@@ -103,6 +114,10 @@ button {
   background: linear-gradient(90deg, #80baf9 -13.29%, #0080e9 110.76%);
   border-radius: 3px;
   border: none;
+  transition: 0.25s;
+}
+.btn-base:hover {
+  background: linear-gradient(90deg, #54A6FF -13.29%, #00559A 110.76%);
 }
 
 .g-header {
@@ -159,8 +174,15 @@ button {
   margin: 0 13px;
 }
 
+.nav-foot {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  -webkit-backdrop-filter: blur(40px) saturate(4.5);
+          backdrop-filter: blur(40px) saturate(4.5);
+}
 .nav-foot .logo {
-  margin: 30px 0;
+  margin: 15px 0;
 }
 .nav-foot .nav-controls {
   display: flex;
@@ -284,6 +306,7 @@ button {
   position: fixed;
   background-color: #fff;
   padding: 8px 0;
+  z-index: 5;
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.1411764706), 0 3px 14px 2px rgba(0, 0, 0, 0.1215686275);
   border-radius: 5px;
 }
@@ -301,6 +324,7 @@ button {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.295);
+  z-index: 10;
 }
 
 .learn-btn {
@@ -612,21 +636,19 @@ button {
   justify-content: center;
   border: 1px solid #3e96fc;
   border-radius: 3px;
+  background: transparent;
+  transition: background 1s;
 }
 .personnel-box .actions .personnel-btn .ic-btn {
+  transition: 0.25s;
+  fill: #3e96fc;
   width: 22px;
   height: 16px;
 }
-.personnel-box .actions .personnel-btn.invalid-action {
-  background-color: transparent;
-}
-.personnel-box .actions .personnel-btn.invalid-action .ic-btn {
-  fill: #3e96fc;
-}
-.personnel-box .actions .personnel-btn.available-action {
+.personnel-box .actions .personnel-btn:hover {
   background: linear-gradient(90deg, #80baf9 -13.29%, #0080e9 110.76%);
 }
-.personnel-box .actions .personnel-btn.available-action .ic-btn {
+.personnel-box .actions .personnel-btn:hover .ic-btn {
   fill: #fff;
 }
 .personnel-box .actions .personnel-btn:last-child {
@@ -723,7 +745,7 @@ button {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  margin: 14px 0;
+  margin: 10px 0;
   width: 100%;
   cursor: pointer;
   display: inline-block;
@@ -968,9 +990,6 @@ button {
   display: flex;
   margin-top: 76px;
 }
-.ns-theme .news-box .preview-box {
-  width: 45%;
-}
 .ns-theme .news-box .preview-box img {
   width: 100%;
   margin-bottom: 32px;
@@ -994,10 +1013,6 @@ button {
   line-height: 24px;
   margin-top: 24px;
   margin-bottom: 27px;
-}
-.ns-theme .news-box .list-box {
-  flex: 1;
-  padding-left: 37px;
 }
 .ns-theme .news-box .list-box .new-item {
   display: flex;

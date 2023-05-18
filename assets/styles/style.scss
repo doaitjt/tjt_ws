@@ -50,7 +50,18 @@ a {
 
 button {
   border: none;
-  background-color: transparent;
+  transition: .25s;
+  &:active {
+    box-shadow: 0 0 14px -3px #d9d9d9;
+  }
+}
+
+input {
+  transition: .1s;
+  &:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 3px 1px var(--nav-color);
+  }
 }
 
 // css common
@@ -105,6 +116,10 @@ button {
   background: linear-gradient(90deg, #80baf9 -13.29%, #0080e9 110.76%);
   border-radius: 3px;
   border: none;
+  transition: .25s;
+  &:hover {
+    background: linear-gradient(90deg, #54A6FF -13.29%, #00559A 110.76%);
+  }
 }
 
 .g-header {
@@ -168,8 +183,12 @@ button {
 }
 
 .nav-foot {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  backdrop-filter: blur(40px) saturate(4.5);
   .logo {
-    margin: 30px 0;
+    margin: 15px 0;
   }
   .nav-controls {
     display: flex;
@@ -293,6 +312,7 @@ button {
   position: fixed;
   background-color: #fff;
   padding: 8px 0;
+  z-index: 5;
   box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024,
   0 3px 14px 2px #0000001f;
   border-radius: 5px;
@@ -311,6 +331,7 @@ button {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.295);
+  z-index: 10;
 }
 
 .learn-btn {
@@ -627,17 +648,15 @@ button {
       justify-content: center;
       border: 1px solid #3e96fc;
       border-radius: 3px;
+      background: transparent;
+      transition: background 1s;
       .ic-btn {
+        transition: .25s;
+        fill: #3e96fc;
         width: 22px;
         height: 16px;
       }
-      &.invalid-action {
-        background-color: transparent;
-        .ic-btn {
-          fill: #3e96fc;
-        }
-      }
-      &.available-action {
+      &:hover {
         background: linear-gradient(90deg, #80baf9 -13.29%, #0080e9 110.76%);
         .ic-btn {
           fill: #fff;
@@ -732,7 +751,7 @@ button {
       font-weight: 400;
       font-size: 18px;
       line-height: 28px;
-      margin: 14px 0;
+      margin: 10px 0;
       width: 100%;
       cursor: pointer;
       display: inline-block;
@@ -992,7 +1011,6 @@ button {
     display: flex;
     margin-top: 76px;
     .preview-box {
-      width: 45%;
       img {
         width: 100%;
         margin-bottom: 32px;
@@ -1019,8 +1037,6 @@ button {
       margin-bottom: 27px;
     }
     .list-box {
-      flex: 1;
-      padding-left: 37px;
       .new-item {
         display: flex;
         align-items: start;

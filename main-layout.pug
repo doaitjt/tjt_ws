@@ -29,6 +29,7 @@ html(lang="en")
         link(rel='stylesheet' href='assets/styles/style.css')
         block headAppend
         block scriptHeadAppend
+        script(src="assets/scripts/ripple.js", defer)
         script(src="app.js", defer)
         block scriptFootAppend
     body
@@ -66,71 +67,71 @@ html(lang="en")
                                     img(src='assets/images/a_yt.svg' alt='youtube' title='TJ Tech youtube')
                                 a.nav-action(href=gb)
                                     img(src='assets/images/a_gg.svg' alt='google' title='TJ Tech google')
-            .nav-foot
-                .container
-                    .d-flex.justify-content-between
-                        a.logo(href=environment)
-                            img(src='assets/images/main_logo.png' alt='logo' title='Home')
-                        #nav-controls.nav-controls
-                            .nav-control.ts-nm(onclick='')
-                                span.nav-content Products and Services
-                                svg.nav-more-ic
-                                    use(href='#triangle-more')
-                                .sub-control-list.many-item
-                                    .d-flex
-                                        a.sub-item(href='crm-software.html') CRM Softwares
-                                        a.sub-item(href='complementary-supportive.html') Supportive Features
-                                        a.sub-item(href='system-development.html') System Development
-                                    .d-flex
-                                        a.sub-item(href='system-maintain.html') System Maintenance
-                                        a.sub-item(href='customer-support.html') Customer Support
-                                        a.sub-item(href='consulation-service.html') Consultation Service
-                            .nav-control.ts-nm(onclick='')
-                                span.nav-content Future Development
-                                svg.nav-more-ic
-                                    use(href='#triangle-more')
-                                .sub-control-list.many-item.ecosystem
-                                    .d-flex
-                                        a.sub-item(href='tjex-fund.html') TJex.fund
-                                        a.sub-item(href='tjex-trade.html') TJex.trade
-                                        a.sub-item(href='tjex-digital.html') TJex.digital
-                                        a.sub-item(href='tjex-finance.html') TJex.finance
-                                    .d-flex
-                                        a.sub-item(href='tjex-ai.html') TJex.ai
-                                        a.sub-item(href='tjex-estate.html') TJex.estate
-                                        a.sub-item(href='tjex-app.html') TJex.app
-                                        a.sub-item(href='tjex-insure.html') TJex.insure
-                            .nav-control.ts-nm(onclick='')
-                                span.nav-content Community
-                                svg.nav-more-ic
-                                    use(href='#triangle-more')
-                                .sub-control-list-short
-                                    .d-flex
-                                        a.sub-item(href='faq.html') FAQ
-                                        a.sub-item(href='news-stories.html') News and Stories
-                                    .d-flex
-                                        a.sub-item(href='blog.html') Blog
-                                        a.sub-item(href='events.html') Events
-                            .nav-control.ts-nm(onclick='')
-                                span.nav-content Company
-                                svg.nav-more-ic
-                                    use(href='#triangle-more')
-                                .sub-control-list.many-item
-                                    .d-flex
-                                        a.sub-item(href='about.html') About Us
-                                        a.sub-item(href='careers.html') Careers
-                                        a.sub-item(href='investor-relation.html') Investor Relation
-                                    .d-flex
-                                        a.sub-item(href='term.html') Term Of Use
-                                        a.sub-item(href='policy.html') Privacy Policy
-                                        a.sub-item(href='contact.html') Contact Us
-                        .sub-actions
-                            img(src='assets/images/sa_search.svg' alt='')
-                            #change-lang.change-lang
-                                img(src='assets/images/sa_lang.svg' alt='')
-                                .lang EN
-                                svg.more-ic
-                                    use(href='#more')
+        .nav-foot
+            .container
+                .d-flex.justify-content-between
+                    a.logo(href=environment)
+                        img(src='assets/images/main_logo.png' alt='logo' title='Home')
+                    #nav-controls.nav-controls
+                        .nav-control.ts-nm(onclick='')
+                            span.nav-content Products and Services
+                            svg.nav-more-ic
+                                use(href='#triangle-more')
+                            .sub-control-list.many-item
+                                .d-flex
+                                    a.sub-item(href='crm-software.html') CRM Softwares
+                                    a.sub-item(href='complementary-supportive.html') Supportive Features
+                                    a.sub-item(href='system-development.html') System Development
+                                .d-flex
+                                    a.sub-item(href='system-maintain.html') System Maintenance
+                                    a.sub-item(href='customer-support.html') Customer Support
+                                    a.sub-item(href='consulation-service.html') Consultation Service
+                        .nav-control.ts-nm(onclick='')
+                            span.nav-content Future Development
+                            svg.nav-more-ic
+                                use(href='#triangle-more')
+                            .sub-control-list.many-item.ecosystem
+                                .d-flex
+                                    a.sub-item(href='tjex-fund.html') TJex.fund
+                                    a.sub-item(href='tjex-trade.html') TJex.trade
+                                    a.sub-item(href='tjex-digital.html') TJex.digital
+                                    a.sub-item(href='tjex-finance.html') TJex.finance
+                                .d-flex
+                                    a.sub-item(href='tjex-ai.html') TJex.ai
+                                    a.sub-item(href='tjex-estate.html') TJex.estate
+                                    a.sub-item(href='tjex-app.html') TJex.app
+                                    a.sub-item(href='tjex-insure.html') TJex.insure
+                        .nav-control.ts-nm(onclick='')
+                            span.nav-content Community
+                            svg.nav-more-ic
+                                use(href='#triangle-more')
+                            .sub-control-list-short
+                                .d-flex
+                                    a.sub-item(href='faq.html') FAQ
+                                    a.sub-item(href='news-stories.html') News and Stories
+                                .d-flex
+                                    a.sub-item(href='blog.html') Blog
+                                    a.sub-item(href='events.html') Events
+                        .nav-control.ts-nm(onclick='')
+                            span.nav-content Company
+                            svg.nav-more-ic
+                                use(href='#triangle-more')
+                            .sub-control-list.many-item
+                                .d-flex
+                                    a.sub-item(href='about.html') About Us
+                                    a.sub-item(href='careers.html') Careers
+                                    a.sub-item(href='investor-relation.html') Investor Relation
+                                .d-flex
+                                    a.sub-item(href='term.html') Term Of Use
+                                    a.sub-item(href='policy.html') Privacy Policy
+                                    a.sub-item(href='contact.html') Contact Us
+                    .sub-actions
+                        img(src='assets/images/sa_search.svg' alt='')
+                        #change-lang.change-lang
+                            img(src='assets/images/sa_lang.svg' alt='')
+                            .lang EN
+                            svg.more-ic
+                                use(href='#more')
         block content
         footer.tjex-footer.home-footer
             .container
@@ -139,7 +140,7 @@ html(lang="en")
                         a(href=environment)
                             img(src='assets/images/main_logo.svg' alt='')
                         br
-                        .g-detail.description.pe-4
+                        .g-detail.description.pe-4.fw-500
                             | TJ TECH constantly pushes the boundaries of technology and is committed to delivering value to our clients through innovative and effective solutions.
                         .contact-item
                             img(src='assets/images/ic_phone.svg' alt='')
