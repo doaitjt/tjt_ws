@@ -168,3 +168,24 @@ $$('button').forEach(el => {
 
   })
 })
+
+// loading
+
+function setLoadingBeforPageLoaded(delay) {
+  window.onload = () => {
+    disableScroll();
+    document.body.classList.add('hidden-scrollbar');
+    const loading = $('#pre-loaded');
+    
+    setTimeout(() => {
+      loading.classList.add('prl-hidden');
+      document.body.classList.remove('hidden-scrollbar');
+      enableScroll();
+      if(loading) {
+        // document.body.removeChild(loading)
+      }
+    }, delay);
+  }
+}
+setLoadingBeforPageLoaded(2000)
+

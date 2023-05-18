@@ -163,6 +163,10 @@ input:focus-visible {
   line-height: 28px;
 }
 
+.hidden-scrollbar::-webkit-scrollbar {
+  opacity: 0;
+}
+
 .nav-head {
   height: 68px;
   width: 100%;
@@ -172,6 +176,21 @@ input:focus-visible {
 }
 .nav-head .nav-actions .nav-action {
   margin: 0 13px;
+}
+
+#pre-loaded {
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  z-index: 40;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pre-loaded.prl-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .nav-foot {
@@ -402,6 +421,7 @@ input:focus-visible {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  transition: 0.2s;
 }
 .swiper .hl-item .slide-title {
   padding-top: 12px;
@@ -410,6 +430,9 @@ input:focus-visible {
   font-size: 16px;
   line-height: 24px;
   color: #616161;
+}
+.swiper .hl-item:hover {
+  transform: translateY(-3px);
 }
 
 .paginator {
