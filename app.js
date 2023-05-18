@@ -161,21 +161,18 @@ window.onscroll = (e) => {
 };
 
 // loading
-
-function setLoadingBeforPageLoaded(delay) {
-	window.onload = () => {
-		disableScroll();
-		document.body.classList.add('hidden-scrollbar');
-		const loading = $('#pre-loaded');
-
-		setTimeout(() => {
-			loading.classList.add('prl-hidden');
-			document.body.classList.remove('hidden-scrollbar');
-			enableScroll();
-			if (loading) {
-				// document.body.removeChild(loading)
-			}
-		}, delay);
-	};
-}
-setLoadingBeforPageLoaded(2000);
+window.addEventListener('load', () => {
+	const loading = $('#pre-loaded');
+	document.body.classList.remove('hidden-scrollbar');
+	loading.classList.add('prl-hidden');
+	setTimeout(() => {
+		if (loading) {
+			document.body.removeChild(loading)
+		}
+	}, 2000)
+	console.log(`loaded`);
+})
+window.addEventListener('DOMContentLoaded', () => {
+	document.body.classList.add('hidden-scrollbar');
+	console.log(`on loading`);
+})
