@@ -161,7 +161,7 @@ window.onscroll = (e) => {
 };
 
 // loading
-window.addEventListener('load', () => {
+/* window.addEventListener('load', () => {
 	const loading = $('#pre-loaded');
 	document.body.classList.remove('hidden-scrollbar');
 	loading.classList.add('prl-hidden');
@@ -176,3 +176,23 @@ window.addEventListener('DOMContentLoaded', () => {
 	document.body.classList.add('hidden-scrollbar');
 	console.log(`on loading`);
 })
+ */
+
+
+function setLoadingBeforPageLoaded(delay) {
+	window.onload = () => {
+		disableScroll();
+		document.body.classList.add('hidden-scrollbar');
+		const loading = $('#pre-loaded');
+
+		setTimeout(() => {
+			loading.classList.add('prl-hidden');
+			document.body.classList.remove('hidden-scrollbar');
+			enableScroll();
+			if (loading) {
+				// document.body.removeChild(loading)
+			}
+		}, delay);
+	};
+}
+setLoadingBeforPageLoaded(4000);
