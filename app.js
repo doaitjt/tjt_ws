@@ -181,7 +181,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function setLoadingBeforPageLoaded(delay) {
   window.onload = () => {
-    if (location.pathname === '/') {
+    console.log(location.pathname);
+    if (location.pathname === '/tjt_ws/' || location.pathname === '/tjt_ws') {
       disableScroll();
       document.body.classList.add('hidden-scrollbar');
       const loading = $('#pre-loaded');
