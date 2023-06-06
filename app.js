@@ -1,3 +1,5 @@
+const API_ENDPOINT = `https://tjtech.mienphi.org`;
+
 /** constants  */
 const $ = document.querySelector.bind(document);
 /** @type{HTMLElement}  */

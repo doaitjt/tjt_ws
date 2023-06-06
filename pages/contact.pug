@@ -3,6 +3,9 @@ extends ../main-layout
 block headAppendTitle
     title TJ Tech - Contact
 
+block scriptFootAppend
+    script(src="assets/scripts/contact.js", defer) 
+
 block content
     .container.ns-theme
         .row
@@ -40,17 +43,17 @@ block content
                         iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0235225224865!2d105.81138947597704!3d21.0317447876747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab2d1e94f373%3A0x16fecba22edb8121!2sCapital%20Place!5e0!3m2!1svi!2s!4v1684127350804!5m2!1svi!2s' width='600' height='405' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
                 .col-12.col-lg-6
                     .title.t2(style='margin-bottom: 9px;') Leave us your info
-                    form.form-box(action='#')
+                    form.form-box#form
                         .form-control-box
                             label.c-title(for='name') Company Name
                             br
-                            input#name.text-input(type='text')
+                            input#name.text-input(type='text', required)
                         .form-control-box
                             label.c-title(for='mail') Email
                             br
-                            input#mail.text-input(type='email')
+                            input#mail.text-input(type='email', required)
                         .form-control-box
-                            label.c-title(for='mess') Email
+                            label.c-title(for='mess') Message
                             br
-                            textarea#mess.text-input(rows='6' style='resize: none;')
+                            textarea#mess.text-input(rows='6' style='resize: none;', required)
                         button(type='submit') Send

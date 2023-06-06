@@ -5,6 +5,9 @@ block scriptHeadAppend
     script(src='assets/scripts/swiper.config.js' defer='')
     script(src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js')
 
+block scriptFootAppend
+    script(src='assets/scripts/subscribe.js' defer='')
+
 block content
     .container
         .row.mt-lg-5
@@ -333,12 +336,12 @@ block content
                         button.btn-base.contact-us-btn Contact Us
             .col-12.col-xl-6.bg-mb
                 img.building(src='assets/images/building.svg' alt='')
-        .leave-info.d-flex.align-items-center.justify-content-between
+        form.leave-info.d-flex.align-items-center.justify-content-between#subForm
             .info
                 .g-header.text-mb-center(style='line-height: 35px') Follow Us
                 .g-detail.fw-500.text-mb-center Never want to miss any new opportunity
-            input#leave-mail(type='text' name='' placeholder='Enter Your Email')
-            button.btn-base.subs-btn Subscribe
+            input#leave-mail(type='email' name='' placeholder='Enter Your Email', required)
+            button#subcribe.btn-base.subs-btn(type="submit") Subscribe
     #pre-loaded
       img(src="assets/images/pre-loading.gif", alt="", style="width: 100%;")
 
