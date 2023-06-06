@@ -227,6 +227,7 @@ function setLoadingBeforPageLoaded(delay) {
     if (location.pathname === p1 || location.pathname === '/tjt_ws') {
       disableScroll();
       document.body.classList.add('hidden-scrollbar');
+      $('#open-mb-menu').children[0].src = `assets/images/root-mb-logo.svg`;
       const loading = $('#pre-loaded');
       setTimeout(() => {
         loading && loading.classList.add('prl-hidden');

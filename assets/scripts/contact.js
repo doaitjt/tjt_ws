@@ -12,5 +12,6 @@ $('#form').addEventListener('submit', (e) => {
     
   }).then(r => r.json()).then(fullfiled => {
     console.log(fullfiled);
+    
   })
 });
