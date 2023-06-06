@@ -224,7 +224,7 @@ const p2 = '/';
 function setLoadingBeforPageLoaded(delay) {
 
   window.onload = () => {
-    if (location.pathname === p2 || location.pathname === '/tjt_ws') {
+    if (location.pathname === p1 || location.pathname === '/tjt_ws') {
       disableScroll();
       document.body.classList.add('hidden-scrollbar');
       const loading = $('#pre-loaded');
