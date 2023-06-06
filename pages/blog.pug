@@ -1,81 +1,106 @@
 extends ../main-layout
 block headAppendTitle
-    title TJ Tech - About
+    title TJ Tech - Blog
+
+block scriptFootAppend
+    script(src="assets/scripts/blogs.js", defer)
+
 block content
     .container.ns-theme
         .row
-            .col-12.col-md-4.pt-5
-                .text-intro.text-nowrap.mt-5
+            .col-12.col-lg-4.pt-5
+                .text-intro.text-nowrap.mt-lg-5
                     | The Future
                     br
-                    |  Of Digital Mastery
-                a(href="contact.html")
-                    button.btn-base.learn-btn Learn More
-            .col-12.col-md-8
+                    |Of Digital Mastery
+                .button-mb-center
+                    a(href="contact.html")
+                        button.btn-base.learn-btn Learn More
+            .col-12.col-lg-8
                 img(style='width: 100%;' src='assets/images/t_community.svg' alt='')
         .g-header.text-center.ecosys-leading(style='margin-top: 102px; margin-bottom: 72px;') Blog
         .news-box.stories-style
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .date-time 26/4/2023
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    //.date-time 26/4/2023
+                    .title TJ TECH: Redefining the Exchange CRM system.
+                    .detail In today’s highly competitive financial landscape, companies are constantly seeking ways to optimize their operations and improve customer engagement.
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .date-time 26/4/2023
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    //.date-time 26/4/2023
+                    .title Catching the trend for CRM Solutions.
+                    .detail In recent years, customer relationship management (CRM) has become an increasingly important aspect of business operations.
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .date-time 26/4/2023
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    //.date-time 26/4/2023
+                    .title What is the trend for the Fintech industry in 2023?
+                    .detail As we step into the year 2023, the Fintech industry is poised for some significant changes and trends.
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .date-time 26/4/2023
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    //.date-time 26/4/2023
+                    .title Forex Trend in 2023: What to Expect?
+                    .detail Forex, also known as foreign exchange or currency trading, is a global decentralized market where currencies are bought and sold.
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .date-time 26/4/2023
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    //.date-time 26/4/2023
+                    .title Bonus Credit: The MT4/MT5 Plugin That Prevents Taking Advantage of Credit
+                    .detail When it comes to trading in the forex market, brokers often offer bonuses and promotions to incentivize new traders to sign up.
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .date-time 26/4/2023
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-        #tjt-paginator.paginator
+                .content
+                    //.date-time 26/4/2023
+                    .title Opportunities And Threats For Financial Exchanges Regarding The Arising Trend Of Utilizing Artificial Intelligence (AI)
+                    .detail Improved efficiency: AI can help financial exchanges automate routine tasks and make the trading process more efficient. This can lead to faster transactions and reduced costs for traders.
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
+            .preview-box.story-item
+                img(src='assets/images/new_preview.png' alt='')
+                .content
+                    //.date-time 26/4/2023
+                    .title TJ TECH: Giving Before Receiving 
+                    .detail TJ Tech is a fast-growing CRM provider for financial exchanges. 
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
+            .preview-box.story-item
+                img(src='assets/images/new_preview.png' alt='')
+                .content
+                    //.date-time 26/4/2023
+                    .title Introducing the Forex CRM: Your Key to Unlocking Profitability and Unleashing Charm in Financial Exchanges!
+                    .detail n the fast-paced world of financial exchanges, where fortunes are made and lost in the blink of an eye, standing out from the crowd is essential.
+                    a.nav-detail(href='blog-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
+        //#tjt-paginator.paginator
             button.page-nav.me-4
                 svg(width='8' height='14' viewbox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg')
                     path(d='M6.66602 12.3337L1.33268 7.00033L6.66602 1.66699' stroke='#212121' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')

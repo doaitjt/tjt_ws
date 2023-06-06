@@ -178,11 +178,51 @@ window.addEventListener('DOMContentLoaded', () => {
 })
  */
 
+$$('.faq-panel').forEach(e => {
+  let expand = false;
+  const [header, body] = e.children;
+  const expandBtn = header.children[0];
+  expandBtn.addEventListener('click', () => {
+    body.classList.toggle('expand');
+    expandBtn.classList.toggle('expand');
+    if (body.clientHeight) {
+      body.style.height = 0;
+    } else {
+      body.style.height = body.children[0].clientHeight + 'px'
+    }
+  })
+});
 
+
+
+
+$('#open-mb-menu').addEventListener('click', () => {
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+  $('.mb-menu-drawer').classList.add('menu-expanded');
+});
+
+$('#close-mb-menu').addEventListener('click', () => {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  $('.mb-menu-drawer').classList.remove('menu-expanded');
+});
+
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
+
+const p1 = '/tjt_ws/';
+const p2 = '/';
 function setLoadingBeforPageLoaded(delay) {
+
   window.onload = () => {
-    console.log(location.pathname);
-    if (location.pathname === '/tjt_ws/' || location.pathname === '/tjt_ws') {
+    if (location.pathname === p1 || location.pathname === '/tjt_ws') {
       disableScroll();
       document.body.classList.add('hidden-scrollbar');
       const loading = $('#pre-loaded');
@@ -191,7 +231,7 @@ function setLoadingBeforPageLoaded(delay) {
         document.body.classList.remove('hidden-scrollbar');
         enableScroll();
         if (loading) {
-          document.body.removeChild(loading)
+          document.body.removeChild(loading);
         }
       }, delay);
     }
@@ -199,3 +239,4 @@ function setLoadingBeforPageLoaded(delay) {
   };
 }
 setLoadingBeforPageLoaded(4000);
+

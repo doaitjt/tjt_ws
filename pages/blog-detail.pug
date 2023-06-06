@@ -1,69 +1,24 @@
 extends ../main-layout
 
 block headAppendTitle
-    title TJ Tech - Blog
+    title TJ Tech - Story
+
+block scriptFootAppend
+    script(src="assets/scripts/blog-detail.js", defer) 
 
 block content
     .container.ns-theme
         .row
-            .col-12.col-md-4.pt-5
-                .text-intro.text-nowrap.mt-5
+            .col-12.col-lg-4.pt-5
+                .text-intro.text-nowrap.mt-lg-5
                     | The Future
                     br
-                    |  Of Digital Mastery
-                a(href="contact.html")
-                    button.btn-base.learn-btn Learn More
-            .col-12.col-md-8
+                    |Of Digital Mastery
+                .button-mb-center
+                    a(href="contact.html")
+                        button.btn-base.learn-btn Learn More
+            .col-12.col-lg-8
                 img(style='width: 100%;' src='assets/images/t_community.svg' alt='')
-        .g-header.text-center.ecosys-leading(style='margin-top: 102px; margin-bottom: 72px;') TJ TECH: Redefining the Exchange CRM system.
+        .g-header.text-center.ecosys-leading#leadTitle(style='margin-top: 102px; margin-bottom: 72px;') TJ TECH: Redefining the Exchange CRM system.
         .blog-detail
-            | In today&rsquo;s highly competitive financial landscape, companies are constantly seeking ways to optimize their operations and improve customer engagement. This is where Customer Relationship Management (CRM) systems come into play. A CRM system can help businesses manage their interactions with customers and streamline their operations, resulting in better customer retention and higher profitability.
-            br
-            br
-            |       One company that stands out in this field is TJ Tech. Founded in 2017, TJ Tech has established itself as a leading provider of CRM solutions for financial exchanges. The company&rsquo;s mission is to provide innovative and reliable technology solutions that meet the evolving needs of its clients.
-            br
-            br
-            |       TJ Tech&rsquo;s flagship product, Exchange CRM, is a cloud-based CRM system specifically designed for financial exchanges. It is a highly customizable solution that allows exchanges to manage their entire customer lifecycle, from lead generation to customer service and support. The system integrates with other platforms used by financial exchanges, such as trading platforms and risk management systems, to provide a comprehensive view of customer activity.
-            br
-            br
-            |       Exchange CRM also comes with a range of features that enable exchanges to personalize their interactions with customers. For instance, the system allows exchanges to create custom dashboards that provide real-time data on customer activity. This data can be used to segment customers based on their trading activity, enabling exchanges to target customers with personalized offers and promotions.
-            br
-            br
-            |       In addition to its core CRM offering, TJ Tech also provides a range of complementary services, including consulting, training, and support. The company&rsquo;s team of experts works closely with clients to understand their specific requirements and provide tailored solutions that meet their needs.
-            br
-            br
-            |       One of the key advantages of working with TJ Tech is the company&rsquo;s commitment to innovation. TJ Tech invests heavily in research and development to ensure its products remain at the forefront of the industry. The company is also proactive in responding to changes in the market, such as the increasing use of mobile devices, by developing new solutions that meet these evolving needs.
-            br
-            br
-            |       All in all, TJ Tech has established itself as a reliable and innovative provider of CRM solutions for financial exchanges. Its Exchange CRM system is a powerful tool that can help clients improve customer engagement, streamline their operations, and drive profitability. With a commitment to innovation and a team of dedicated experts, TJ Tech is well positioned to continue to grow and serve the needs of its clients in the years ahead.
-        hr.divider
-        .g-header.text-center.ecosys-leading(style='margin-bottom: 72px;') Related news
-        .news-box.stories-style
-            .preview-box.story-item
-                img(src='assets/images/new_preview.png' alt='')
-                // <div class="date-time">26/4/2023</div>
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-            .preview-box.story-item
-                img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=2')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-            .preview-box.story-item
-                img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=4')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+            

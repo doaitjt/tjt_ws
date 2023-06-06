@@ -7,19 +7,93 @@ block scriptHeadAppend
 
 block content
     .container
-        .row.mt-5
-            .col-12.col-md-6
+        .row.mt-lg-5
+            .col-12.col-lg-6
                 .text-intro.w-95
                     | Give People
                     br
                     | Freedom
                 .text-intro-explain.text-mt Help businesses optimize their delivery cycle and faster software releases
-                a(href="contact.html")
-                    button.btn-base.learn-btn Learn More
-            .col-12.col-md-6
+                .button-mb-center
+                    a(href="contact.html")
+                        button.btn-base.learn-btn Learn More
+            .col-12.col-lg-6
                 img(style='width: 100%;' src='assets/images/p_home.svg' alt='')
-        .slideshow.row
-            .swiper.col-10(style='padding-top: 45px')
+        .slideshow.row.slmb
+            .swiper.swiperMB.col-10(style='padding-top: 45px')
+                // Additional required wrapper
+                .swiper-wrapper
+                    // Slides
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_tech_software.svg' alt='')
+                            .slide-title CRM Software
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_sys_develop.svg' alt='')
+                            .slide-title System Development
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_server_maintain.svg' alt='')
+                            .slide-title Server Maintenance
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_customer_support.svg' alt='')
+                            .slide-title Customer Support
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_Consultation_Service.svg' alt='')
+                            .slide-title Consultation Service
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_supportive_feature.svg' alt='')
+                            .slide-title Supportive Features
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_tech_software.svg' alt='')
+                            .slide-title CRM Software
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_sys_develop.svg' alt='')
+                            .slide-title System Development
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_server_maintain.svg' alt='')
+                            .slide-title Server Maintenance
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_customer_support.svg' alt='')
+                            .slide-title Customer Support
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_Consultation_Service.svg' alt='')
+                            .slide-title Consultation Service
+                    .swiper-slide
+                        .hl-item
+                            .img-box
+                                img(src='assets/images/hl_supportive_feature.svg' alt='')
+                            .slide-title Supportive Features
+                // If we need pagination
+                // <div class="swiper-pagination"></div>
+            #swiper-next.swiper-controls-btn
+                svg(width='12' height='26' viewbox='0 0 12 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M1 24.962L9.71877 15.1873C10.7337 14.0494 10.7337 12.3312 9.71877 11.1934L1 1.4187' stroke='#93979B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+            #swiper-prev.swiper-controls-btn
+                svg(width='13' height='26' viewbox='0 0 13 26' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M11.5 24.9931L1 13.2215L11.5 1.44983' stroke='#93979B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+        .slideshow.row.slpc
+            .swiper.swiperPC.col-10(style='padding-top: 45px')
                 // Additional required wrapper
                 .swiper-wrapper
                     // Slides
@@ -79,7 +153,7 @@ block content
             #swiper-prev.swiper-controls-btn
                 svg(width='13' height='26' viewbox='0 0 13 26' fill='none' xmlns='http://www.w3.org/2000/svg')
                     path(d='M11.5 24.9931L1 13.2215L11.5 1.44983' stroke='#93979B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
-        .d-flex.justify-content-center
+        .d-flex.justify-content-center.nav-main
             .tjex-ecosystem
                 .tjex-description
                     .header.g-header.text-center Future Development
@@ -121,14 +195,58 @@ block content
                             .iw
                                 a.rounded-content.rounded-content-right(href='tjex-ai.html') TJex.ai
                                 img(src='assets/images/ic_rounded_tick.svg' alt='')
+        .main-navs
+          img.img-home-nav(src="assets/images/home_nav.svg", alt="")
+          .d-flex.flex-wrap.mt-2
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-finance.html") TJex.finance
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-fund.html") TJex.fund
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-digital.html") TJex.digital
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-ai.html") TJex.ai
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-app.html") TJex.app
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-trade.html") TJex.trade
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-insure.html") TJex.insure
+            .w-50.nav-items-main
+              .tick-icon-box
+                img.tick-icon.ticked-box(src="assets/images/ic_rounded_ticked.svg" alt="")
+                img.tick-icon.tick-box(src="assets/images/ic_rounded_tick.svg" alt="")
+              a.content(href="tjex-estate.html") TJex.estate
+            
     .wcu
         img.deep-bg(src='assets/images/t_why_choose_us.svg')
         .container
             .row
-                .col-12.col-xl-5
+                .col-12.col-xl-5.img-before
                     img(src='assets/images/computer.svg' alt='' style='width: 100%')
                 .col-12.col-xl-7
-                    .g-header Why Choose Us
+                    .g-header.header-mb-center Why Choose Us
                     .g-detail.fw-500
                         | To achieve our goals, we have developed a set of core competencies that set us apart in the highly competitive CRM industry:
                     .desc-list
@@ -145,8 +263,15 @@ block content
                             | Customer centric: Build up products for customers and attentively listen to customers&apos; feedback.
                         .item.g-detail.fw-500
                             | Sustainable: Pursue a long-term vision for future development and a focus on sustainability
-                    a(href="contact.html") 
-                        button.btn-base.contact-us-btn Enquire Now
+                    .button-mb-center
+                        a(href="contact.html") 
+                            button.btn-base.contact-us-btn Enquire Now
+    .wcu.wcu-mb
+        img.deep-bg(src='assets/images/t_why_choose_us.svg')
+        .container
+            .row
+                .col-12
+                    img(src='assets/images/computer.svg' alt='' style='width: 100%')
     .container
         .d-flex.justify-content-center
             .wwa
@@ -179,8 +304,8 @@ block content
                         |  Our Customers
                     .g-detail.fst-italic.fw-500
                         | &ldquo;Low-hanging fruit are we in agreeance, we need to leverage our synergies. Put it on the parking lot drive awarenss to increase engagement but shelfware, yet if you could do that, that would br great get all your ducks in a row.&rdquo;
-                    .personnel-name Alexis Conely
-                    .personnel-position Project Manager
+                    .personnel-name.text-mb-center Alexis Conely
+                    .personnel-position.text-mb-center Project Manager
                     .actions.d-flex
                         button.personnel-btn.invalid-action
                             svg.ic-btn
@@ -188,27 +313,30 @@ block content
                         button.personnel-btn.available-action
                             svg.ic-btn.flip-horizontal
                                 use(href='#btn-vector')
-                .col-12.col-xl-6
+                .col-12.col-xl-6.box-mb-vertical-center
                     .avatar-description
-                        img.decorator-1(src='assets/images//av_complex_box.svg')
-                        img.decorator-2(src='assets/images//av_ball.svg')
+                        img.decorator-1(src='assets/images/av_complex_box.svg')
+                        img.decorator-1-mb(src='assets/images/decorator1-mb.svg')
+                        img.decorator-2(src='assets/images/av_ball.svg')
                         img#personalsrc(src='assets/images/personnel.jpg' alt='')
     .container(style='padding-top: 160px')
         .row
-            .col-12.col-xl-6
+            .col-12.col-xl-6.bg-pc
                 img.building(src='assets/images/building.svg' alt='')
             .col-12.col-xl-6
                 .ctu-detail.pl-5
-                    .g-header.mb-40 Office Location
+                    .g-header.mb-40.text-mb-center Office Location
                     .g-detail.fw-500
                         | TJ Tech Group with its fully flexible high-end disruptive business model, is a Singaporean established and trusted CRM provider, located at Capital Place Building in the heart of Hanoi&rsquo;s financial quarter
-                    a(href="contact.html")
+                    .button-mb-center
+                        a(href="contact.html")
                         button.btn-base.contact-us-btn Contact Us
-
+            .col-12.col-xl-6.bg-mb
+                img.building(src='assets/images/building.svg' alt='')
         .leave-info.d-flex.align-items-center.justify-content-between
             .info
-                .g-header(style='line-height: 35px') Follow Us
-                .g-detail.fw-500 Never want to miss any new opportunity
+                .g-header.text-mb-center(style='line-height: 35px') Follow Us
+                .g-detail.fw-500.text-mb-center Never want to miss any new opportunity
             input#leave-mail(type='text' name='' placeholder='Enter Your Email')
             button.btn-base.subs-btn Subscribe
     #pre-loaded

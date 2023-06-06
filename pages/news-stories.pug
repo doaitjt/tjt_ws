@@ -3,112 +3,76 @@ extends ../main-layout
 block headAppendTitle
     title TJ Tech - News & Stories
 
+block scriptFootAppend
+    script(src="assets/scripts/stories.js", defer) 
+
 block content
     .container.ns-theme
         .row
-            .col-12.col-md-4.pt-5
-                .text-intro.text-nowrap.mt-5
+            .col-12.col-lg-4.pt-5
+                .text-intro.text-nowrap.mt-lg-5
                     | The Future
                     br
-                    |  Of Digital Mastery
-                a(href="contact.html")
-                    button.btn-base.learn-btn Learn More
-            .col-12.col-md-8
+                    |Of Digital Mastery
+                .button-mb-center
+                    a(href="storyact.html")
+                        button.btn-base.learn-btn Learn More
+            .col-12.col-lg-8
                 img(style='width: 100%;' src='assets/images/t_community.svg' alt='')
-        .g-header.text-center.ecosys-leading(style='margin-top: 102px;') News
-        .news-box.row
-            .preview-box.col-12.col-md-5
-                img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                button.nav-detail
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-            .list-box.col-12.col-md-7
-                .new-item
-                    img(src='assets/images/new_1.png' alt='')
-                    .info
-                        .title Where to grow your business as a photographer: site or social media?
-                        button.nav-detail
-                            | Read Post
-                            svg
-                                use(href='#goto-detail')
-                .new-item
-                    img(src='assets/images/new_2.png' alt='')
-                    .info
-                        .title How to design your site footer like we did
-                        button.nav-detail
-                            | Read Post
-                            svg
-                                use(href='#goto-detail')
-                .new-item
-                    img(src='assets/images/new_3.png' alt='')
-                    .info
-                        .title How a visual artist redefines success in graphic design
-                        button.nav-detail
-                            | Read Post
-                            svg
-                                use(href='#goto-detail')
-        hr.divider
+
         .g-header.text-center.ecosys-leading(style='margin-bottom: 68px;') Stories
         .news-box.stories-style
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                button.nav-detail
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    .title Story of a marketing officer at TJ TECH - Jim
+                    .detail  I wake up to the sound of my alarm and quickly check my phone for any new emails or messages from my boss. As a sales/marketing officer at a leading software company, I am always on the go and never know when a new opportunity may arise.
+                    a.story-nav(href="story-detail.html?t=0") 
+                        button.nav-detail
+                            | Read Post
+                            svg
+                                use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                button.nav-detail
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    .title Story of a developer at TJ TECH - Alex
+                    .detail Meet Alex, a software developer at TJ Tech Company. TJ Tech specializes in providing CRM solutions for financial exchange companies. Alex has been working at TJ Tech for the past three years and has become an integral part of the development team.
+                    a.story-nav(href="story-detail.html?t=1") 
+                        button.nav-detail
+                            | Read Post
+                            svg
+                                use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                button.nav-detail
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    .title Story of a tester at TJ TECH - Laura
+                    .detail As a Quality Assurance Officer at TJ Tech Company, my job is to ensure that the CRM solution we provide for financial exchanges is of the highest quality.
+                    a.story-nav(href="story-detail.html?t=2") 
+                        button.nav-detail
+                            | Read Post
+                            svg
+                                use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                button.nav-detail
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    .title Story of a customer support at TJ TECH - Sarah
+                    .detail It was a typical day at TJ Tech, a company that provides a CRM solution for financial exchanges. The customer support team had just started their shift, ready to handle any inquiries or issues that customers might have.
+                    a.story-nav(href="story-detail.html?t=3") 
+                        button.nav-detail
+                            | Read Post
+                            svg
+                                use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                button.nav-detail
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-            .preview-box.story-item
-                img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                button.nav-detail
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-        #tjt-paginator.paginator
+                .content
+                    .title Story of a designer at TJ TECH - Jane
+                    .detail As a designer at TJ Tech Company, Jane was tasked with creating a user interface for their new CRM solution for financial exchange. Jane was excited to take on this project because she knew that it would be a challenging yet rewarding experience.
+                    a.story-nav(href="story-detail.html?t=4") 
+                        button.nav-detail
+                            | Read Post
+                            svg
+                                use(href='#goto-detail')
+        //#tjt-paginator.paginator
             button.page-nav.me-4
                 svg(width='8' height='14' viewbox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg')
                     path(d='M6.66602 12.3337L1.33268 7.00033L6.66602 1.66699' stroke='#212121' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')

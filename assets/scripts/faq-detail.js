@@ -32,14 +32,15 @@ $('#faq-header').innerHTML = currentData.title;
 $$('.faq-panel').forEach(e => {
   let expand = false;
   const [header, body] = e.children;
+  console.log(e);
   const expandBtn = header.children[0];
   expandBtn.addEventListener('click', () => {
     body.classList.toggle('expand');
     expandBtn.classList.toggle('expand');
-    if(body.clientHeight) {
+    if (body.clientHeight) {
       body.style.height = 0;
     } else {
       body.style.height = body.children[0].clientHeight + 'px'
     }
   })
-})
+});

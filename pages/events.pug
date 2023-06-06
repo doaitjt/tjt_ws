@@ -3,75 +3,66 @@ extends ../main-layout
 block headAppendTitle
     title TJ Tech - Events
 
+block scriptFootAppend
+    script(src="assets/scripts/events.js", defer)
+
 block content
     .container.ns-theme
         .row
-            .col-12.col-md-4.pt-5
-                .text-intro.text-nowrap.mt-5
+            .col-12.col-lg-4.pt-5
+                .text-intro.text-nowrap.mt-lg-5
                     | The Future
                     br
-                    |  Of Digital Mastery
-                a(href="contact.html")
-                    button.btn-base.learn-btn Learn More
-            .col-12.col-md-8
+                    |Of Digital Mastery
+                .button-mb-center
+                    a(href="contact.html")
+                        button.btn-base.learn-btn Learn More
+            .col-12.col-lg-8
                 img(style='width: 100%;' src='assets/images/t_community.svg' alt='')
         .g-header.text-center.ecosys-leading(style='margin-top: 102px; margin-bottom: 72px;') Events
         .news-box.stories-style
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    .title TJ TECH achieved success with their new Customer support team.
+                    .detail
+                        | TJ Tech, a leading CRM provider for financial exchange, has recently announced the launch of their 24/5 support team, which is set to provide unparalleled customer service to their clients. This new support team will be available round the clock, five days a week, to assist their clients with any queries or concerns they may have.
+                    a.nav-detail(href='event-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    .title TJ TECH completed the digital transformation and cloud data migration process
+                    .detail
+                        | TJ Tech, a leading CRM software provider for financial exchange, has announced the successful completion of its digital transformation and cloud data migration process. The company has migrated its entire CRM system to the cloud, allowing it to provide faster and more secure access to its customers' data.
+                    a.nav-detail(href='event-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
+                .content
+                    .title TJ TECH opened their second office in Vietnam following the expansion plan.
+                    .detail
+                        | TJ Tech, a leading CRM software provider for financial exchange, has announced the opening of its second office as part of its expansion plans. The new office is located in a prime commercial area in the heart of the city and is equipped with state-of-the-art facilities to support the company's growing team.
+                    a.nav-detail(href='event-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
             .preview-box.story-item
                 img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-            .preview-box.story-item
-                img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-            .preview-box.story-item
-                img(src='assets/images/new_preview.png' alt='')
-                .title Travelling as a way of self-discovery and progress
-                .detail
-                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                a.nav-detail(href='blog-detail.html?q=0')
-                    | Read Post
-                    svg
-                        use(href='#goto-detail')
-        #tjt-paginator.paginator
+                .content
+                    .title TJ TECH’s announcement on the launch of new server
+                    .detail
+                        | TJ Tech, a leading CRM software provider for financial exchange, has announced the launch of its new server as part of its expansion plans. The new server is aimed at improving the company's capacity to handle increasing demand from its growing customer base.
+                    a.nav-detail(href='event-detail.html?q=0')
+                        | Read Post
+                        svg
+                            use(href='#goto-detail')
+           
+        //#tjt-paginator.paginator
             button.page-nav.me-4
                 svg(width='8' height='14' viewbox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg')
                     path(d='M6.66602 12.3337L1.33268 7.00033L6.66602 1.66699' stroke='#212121' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round')

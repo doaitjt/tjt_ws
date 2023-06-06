@@ -6,19 +6,20 @@ block headAppendTitle
 block content
     .container.ns-theme
         .row
-            .col-12.col-md-5.mt-5
-                .text-intro.text-nowrap.pt-5
+            .col-12.col-lg-5.mt-5
+                .text-intro.text-nowrap.pt-lg-5
                     | Discover Our Open
                     br
-                    |  Positions Now
-                a(href="contact.html")
-                    button.btn-base.learn-btn Learn More
-            .col-12.col-md-7
+                    |Positions Now
+                .button-mb-center
+                    a(href="contact.html")
+                        button.btn-base.learn-btn Learn More
+            .col-12.col-lg-7
                 img(style='width: 100%;' src='assets/images/t_company.svg' alt='')
         .g-header.text-center.ecosys-leading(style='margin: 121px 0 70px 0;') CONTACT US
         .leave-form.news-box
-            .row.w-100
-                .col-12.col-xl-6
+            .row(style="width: -webkit-fill-available")
+                .col-12.col-lg-6
                     .title(style='margin-bottom: 32px;') Head Offices
                     .contact-info
                         .lead-ic
@@ -37,8 +38,8 @@ block content
                         .c-title (+84) 2432 668 834
                     .map
                         iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0235225224865!2d105.81138947597704!3d21.0317447876747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab2d1e94f373%3A0x16fecba22edb8121!2sCapital%20Place!5e0!3m2!1svi!2s!4v1684127350804!5m2!1svi!2s' width='600' height='405' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
-                .col-12.col-xl-6
-                    .title(style='margin-bottom: 9px;') Leave us your info
+                .col-12.col-lg-6
+                    .title.t2(style='margin-bottom: 9px;') Leave us your info
                     form.form-box(action='#')
                         .form-control-box
                             label.c-title(for='name') Company Name
