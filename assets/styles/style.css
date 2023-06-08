@@ -4,10 +4,6 @@
     max-width: 1216px !important;
   }
 }
-.row {
-  --bs-gutter-x: 2rem !important;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +21,6 @@
 
 html {
   scroll-behavior: unset !important;
-  overflow-x: hidden;
 }
 
 body {
@@ -584,7 +579,7 @@ input:focus-visible {
 }
 
 .wwa-list {
-  margin: 0 -16px;
+  margin: 0 -12px;
 }
 .wwa-list .wwa-item {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
@@ -636,7 +631,7 @@ input:focus-visible {
 .personnel-box .avatar-description .decorator-2 {
   position: absolute;
   bottom: -21px;
-  right: -53px;
+  right: -35px;
 }
 .personnel-box .g-detail {
   margin: 40px 0;
@@ -784,6 +779,9 @@ input:focus-visible {
   color: var(--nav-color);
 }
 
+.crm-service {
+  overflow-x: hidden;
+}
 .crm-service .sbd {
   margin-top: 130px;
   margin-bottom: 49px;
@@ -1388,7 +1386,7 @@ input:focus-visible {
   transform: translateX(-100%);
 }
 .mb-menu-drawer .content-box {
-  height: calc(100% - 108px);
+  height: calc(100% - 28px);
   overflow: auto;
 }
 .mb-menu-drawer .content-box .faq-panel .faq-panel-header,
@@ -1466,8 +1464,8 @@ input:focus-visible {
 }
 .mb-menu-drawer .btn-mn-close {
   position: absolute;
-  top: 28px;
-  right: 13px;
+  top: 5px;
+  right: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1566,7 +1564,7 @@ input:focus-visible {
   .wcu-mb .deep-bg {
     display: block;
     height: 434px;
-    width: 416px;
+    width: 100%;
     top: -90px;
   }
   .personnel-box {
@@ -1576,7 +1574,7 @@ input:focus-visible {
     width: 100%;
   }
   .personnel-box .avatar-description .decorator-2 {
-    right: -130px;
+    right: -50px;
   }
   .personnel-box .decorator-1-mb {
     display: block;
@@ -1607,9 +1605,9 @@ input:focus-visible {
     display: block;
     position: absolute;
     top: 0;
-    left: -50px;
-    width: calc(100% + 100px);
-    height: calc(100% + 100px);
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     background-color: #dff9ff;
     border-radius: 50%;
@@ -1743,6 +1741,7 @@ input:focus-visible {
   .crm-service .leading .figure .image-shadow {
     width: 385px;
     left: 50%;
+    top: -40px;
     transform: translateX(-80%);
   }
   .coml-first-img {
@@ -1777,7 +1776,7 @@ input:focus-visible {
   }
   .leave-info {
     padding: 0;
-    margin-top: 80px;
+    margin-top: 0;
     flex-direction: column;
     background: unset;
     box-shadow: unset;
@@ -1872,6 +1871,11 @@ input:focus-visible {
   }
   .crm-service .leading .figure .main-image {
     width: calc(100% - 40px);
-    height: auto;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .row {
+    --bs-gutter-x: 2rem !important;
   }
 }/*# sourceMappingURL=style.css.map */
