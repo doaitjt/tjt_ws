@@ -114,9 +114,7 @@ $('#change-lang').addEventListener('click', () => {
   // $('#change-lang .lang-options').style.display = showLang ? 'block' : 'none';
 });
 
-function changeLang() {
-  console.log(`set lang`);
-}
+function changeLang() {}
 
 const container = document.getElementById('rounded-container');
 const squares = document.getElementsByClassName('around-item');
@@ -201,16 +199,14 @@ $$('.faq-panel').forEach(e => {
 $('#open-mb-menu').addEventListener('click', () => {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;
-  body.style.position = 'fixed';
-  body.style.top = `-${scrollY}`;
+  body.style.overflow = 'hidden';
   $('.mb-menu-drawer').classList.add('menu-expanded');
 });
 
 $('#close-mb-menu').addEventListener('click', () => {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.position = '';
-  body.style.top = '';
+  body.style.overflow = 'auto';
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
   $('.mb-menu-drawer').classList.remove('menu-expanded');
 });
@@ -219,12 +215,12 @@ window.addEventListener('scroll', () => {
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
 
-const p1 = '/tjt_ws/';
+const p1 = '';
 const p2 = '/';
 function setLoadingBeforPageLoaded(delay) {
 
   window.onload = () => {
-    if (location.pathname === p1 || location.pathname === '/tjt_ws') {
+    if (location.pathname === p1 || location.pathname === p2) {
       disableScroll();
       document.body.classList.add('hidden-scrollbar');
       const loading = $('#pre-loaded');
@@ -236,7 +232,6 @@ function setLoadingBeforPageLoaded(delay) {
           document.body.removeChild(loading);
         }
       }, delay);
-      console.log($('#mb-logo'));
       $('#mb-logo').src = `assets/images/root-mb-logo.svg`;
     }
 

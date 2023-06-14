@@ -25,6 +25,7 @@ html {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 body:after {
   content: "";
@@ -33,7 +34,7 @@ body:after {
   top: 0;
   right: 0;
   z-index: -1;
-  background-image: url("/tjt_ws/assets/images/t_head.svg");
+  background-image: url("/assets/images/t_head.svg");
   width: 1000px;
   height: 898px;
 }
@@ -105,6 +106,11 @@ input:focus-visible {
   line-height: 36px;
 }
 
+.head-spacing {
+  margin-top: 120px;
+  margin-bottom: 70px;
+}
+
 .btn-base {
   color: #fff;
   font-weight: 500;
@@ -167,6 +173,28 @@ input:focus-visible {
   opacity: 0;
 }
 
+.job-detail {
+  font-weight: bolder;
+  margin-top: 36px;
+}
+.job-detail:first-child {
+  margin: 0;
+}
+
+.job-descriptor {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #616161;
+}
+
+ul.job-descriptor {
+  margin-left: -7px;
+  margin-bottom: 0;
+}
+
 .nav-head {
   height: 68px;
   width: 100%;
@@ -181,7 +209,7 @@ input:focus-visible {
 #pre-loaded {
   position: fixed;
   inset: 0;
-  background-color: #fff;
+  background-color: #1c2366;
   z-index: 40;
   transition: 1s;
   display: flex;
@@ -302,6 +330,7 @@ input:focus-visible {
 .nav-foot .sub-actions {
   display: flex;
   opacity: 0;
+  width: 0;
   visibility: hidden;
   align-items: center;
 }
@@ -467,7 +496,7 @@ input:focus-visible {
   width: 1000px;
   height: 1000px;
   position: relative;
-  background-image: url("/tjt_ws/assets/images/h_ecosystem.svg");
+  background-image: url("/assets/images/h_ecosystem.svg");
 }
 .tjex-ecosystem .circle {
   border: 1px solid rgba(189, 189, 189, 0.3);
@@ -564,7 +593,7 @@ input:focus-visible {
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-image: url("/tjt_ws/assets/images/ic_tick.svg");
+  background-image: url("/assets/images/ic_tick.svg");
 }
 
 .wwa {
@@ -614,7 +643,7 @@ input:focus-visible {
   top: -82px;
   right: 0;
   z-index: -1;
-  background-image: url("/tjt_ws/assets/images/t_personnel.svg");
+  background-image: url("/assets/images/t_personnel.svg");
   width: 1160px;
   height: 754px;
   background-repeat: none;
@@ -1339,8 +1368,41 @@ input:focus-visible {
 .bg-mb,
 .decorator-1-mb,
 #nav-mb,
-.d-mb-none {
+.d-mb-none,
+.ecosys-mb {
   display: none;
+}
+
+.ecosys-mb {
+  flex-wrap: wrap;
+}
+.ecosys-mb .bg-sys {
+  width: 100%;
+}
+.ecosys-mb .sys-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  margin-bottom: 24px;
+}
+.ecosys-mb .sys-item .hover {
+  display: none;
+}
+.ecosys-mb .sys-item:hover .hover {
+  display: block !important;
+}
+.ecosys-mb .sys-item:hover .not-hover {
+  display: none !important;
+}
+.ecosys-mb .sys-item .text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #616161;
+  margin-top: 24px;
 }
 
 #nav-mb {
@@ -1642,6 +1704,21 @@ input:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
+  .sub-control-list .sub-item {
+    padding: 18px 12px !important;
+  }
+  .sub-control-list .sub-item::before {
+    left: 15px !important;
+  }
+  .faq-list {
+    margin-top: 24px;
+  }
+  .ecosys-pc {
+    display: none;
+  }
+  .ecosys-mb {
+    display: flex;
+  }
   .feedback-tickets .ticket {
     width: calc(50% - 33px);
     margin-bottom: 0;
@@ -1837,6 +1914,9 @@ input:focus-visible {
     width: 100%;
     height: 261px;
   }
+  .news-box.stories-style .preview-box.story-item.careers-post .title, .news-box.stories-style .preview-box.story-item.careers-post .detail {
+    margin-top: 12px;
+  }
   .news-box.stories-style .preview-box.story-item img {
     width: calc(50% - 9px);
     height: 160px;
@@ -1844,6 +1924,7 @@ input:focus-visible {
   }
   .news-box.stories-style .preview-box.story-item .content {
     width: calc(50% - 9px);
+    position: relative;
   }
   .news-box.stories-style .preview-box.story-item .content a {
     position: unset;
@@ -1857,6 +1938,9 @@ input:focus-visible {
   .news-box.stories-style .preview-box.story-item .content .nav-detail {
     margin-top: 15px;
     display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
   .bg-mb .building {
     width: 100%;
