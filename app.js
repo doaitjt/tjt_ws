@@ -237,5 +237,5 @@ function setLoadingBeforPageLoaded(delay) {
 
   };
 }
-setLoadingBeforPageLoaded(4000);
+setLoadingBeforPageLoaded(3800);
 

@@ -209,7 +209,7 @@ ul.job-descriptor {
 #pre-loaded {
   position: fixed;
   inset: 0;
-  background-color: #1c2366;
+  background-color: #fff;
   z-index: 40;
   transition: 1s;
   display: flex;
