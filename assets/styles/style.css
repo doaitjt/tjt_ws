@@ -1084,6 +1084,8 @@ ul.job-descriptor {
 @media screen and (max-width: 500px) {
   .ns-theme .news-box .title {
     font-size: 16px;
+    max-height: 125px;
+    overflow: hidden;
   }
 }
 .ns-theme .news-box .detail {
