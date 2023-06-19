@@ -199,14 +199,16 @@ $$('.faq-panel').forEach(e => {
 $('#open-mb-menu').addEventListener('click', () => {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;
-  body.style.overflow = 'hidden';
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
   $('.mb-menu-drawer').classList.add('menu-expanded');
 });
 
 $('#close-mb-menu').addEventListener('click', () => {
   const body = document.body;
   const scrollY = body.style.top;
-  body.style.overflow = 'auto';
+  body.style.position = '';
+  body.style.top = '';
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
   $('.mb-menu-drawer').classList.remove('menu-expanded');
 });
