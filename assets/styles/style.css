@@ -225,7 +225,7 @@ ul.job-descriptor {
   opacity: 0;
   visibility: hidden;
 }
-@media screen and (max-width: 500) {
+@media screen and (max-width: 768px) {
   #pre-loaded img {
     transform: scale(1.5);
   }
@@ -856,6 +856,7 @@ ul.job-descriptor {
   position: absolute;
   right: 1rem;
   bottom: 0;
+  height: calc(100% - 24px);
 }
 .crm-service .descriptor-item {
   padding: 42px 28px;

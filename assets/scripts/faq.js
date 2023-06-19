@@ -47,14 +47,6 @@ const faqs = [
 		title: 'TJ TECH Supportive add-ons and plug-ins',
 		contents: [
 			{
-				title: 'What is the IB scheme?',
-				detail: `One of the special functions that we developed in the software is IB (Introducing Broker), this is a kind of affiliate marketing where exchanges can take advantage of people with a good network or own well-known marketing channels to attract their followers to register accounts, deposit money, and execute transactions. Our system will also manage the IB network according to the IB level and percentage of profit they might get from peers.`,
-			},
-			{
-				title: 'Who can be qualified for MAM and PAMM masters?',
-				detail: `MAMs and PAMMs can be defined as account owners with excellent trading skills, tactics and good trading records. Users subscribing to MAM accounts have more trading options since they can partially invest money for their own decision while for PAMM account, all trading decisions originate from the PAMM account owner. Our software is responsible for the profit-sharing structure which defines how many percentages are allocated between people in the network (normally depending on the percentage/amount of input capital).`,
-			},
-			{
 				title: 'What types of plug-ins can TJ Tech offer?',
 				detail: `
           - No Quote No Trade <br>
