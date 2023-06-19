@@ -10,8 +10,10 @@ $('#form').addEventListener('submit', (e) => {
     method: 'POST',
     mode: 'no-cors'
     
-  }).then(r => r.json()).then(fullfiled => {
-    console.log(fullfiled);
+  }).then(r => {
+    console.log(r.clone().);
+  }).then(fullfiled => {
+    
     
   })
 });

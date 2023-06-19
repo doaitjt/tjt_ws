@@ -148,6 +148,9 @@ input {
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 36px;
+  @media screen and (max-width: 500px) {
+    line-height: 25px;
+  }
 }
 
 .g-normal {
@@ -1090,6 +1093,9 @@ ul.job-descriptor {
 			font-weight: 700;
 			font-size: 22px;
 			line-height: 36px;
+      @media screen and (max-width: 500px) {
+        font-size: 18px;
+      }
 		}
 		.detail {
 			color: #212121;
